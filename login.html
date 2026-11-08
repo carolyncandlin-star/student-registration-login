@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+    <div class="container">
+
+        <h1>Student Login</h1>
+
+        <p>Welcome back! Login to your account</p>
+
+        <!-- novalidate turns off the browser's native popups; login.js shows custom errors -->
+        <form id="loginForm" novalidate>
+
+            <!-- Email -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+            <span class="error" id="emailError"></span>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password"
+                   placeholder="Enter your password" required>
+            <span class="error" id="passwordError"></span>
+
+            <!-- Show Password -->
+            <div class="show-password">
+                <input type="checkbox" id="showpassword">
+                <label for="showpassword">Show Password</label>
+            </div>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <p>
+            Don't have an account?
+            <a href="index.html">Register here</a>
+        </p>
+
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
